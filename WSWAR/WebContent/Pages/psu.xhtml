@@ -1,0 +1,18 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<h:form>
+		Nome
+		<h:inputText value="#{PsuForm.nome}" /><br/>
+		
+		Fabricante
+		<h:inputText value="#{PsuForm.fabricante}" /><br/>
+		
+		Potencia
+		<h:inputText value="#{PsuForm.potencia}" /><br/>
+		<h:commandButton action="#{PsuForm.adicionaComponente()}" value="Salvar" />
+	</h:form>
+
+</ui:composition>

@@ -1,0 +1,27 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<h:form>
+		Nome
+		<h:inputText value="#{MoboForm.nome}" /><br/>
+		
+		fabricante
+		<h:inputText value="#{MoboForm.fabricante}" /><br/>
+		
+		Socket
+		<h:inputText value="#{MoboForm.socket}" /><br/>
+		
+		Slot Ram
+		<h:inputText value="#{MoboForm.slotRam}" /><br/>
+		
+		Quantidade total de memória
+		<h:inputText value="#{MoboForm.totalRam}" /><br/>
+		
+		Numero de slots Pcie
+		<h:inputText value="#{MoboForm.qtdPcie}" /><br/>
+		<h:commandButton action="#{MoboForm.adicionaComponente()}" value="Salvar" />
+	</h:form>
+
+</ui:composition>

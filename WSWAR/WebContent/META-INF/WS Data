@@ -1,0 +1,19 @@
+select * from cpu;
+
+select * from gpu;
+
+select * from placamae;
+
+select * from ram;
+
+select * from psu;
+
+UPDATE gpu SET preco = 559.89;
+
+UPDATE cpu SET preco = 699.90;
+
+UPDATE placamae SET valor = 449.90;
+
+UPDATE ram SET valor = 359.90;
+
+UPDATE psu SET valor = 289.90;

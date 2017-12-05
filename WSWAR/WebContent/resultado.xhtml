@@ -1,0 +1,100 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<link rel="stylesheet" href="_css/result.css" />
+	<div id="interface">
+
+		<section id="corpo">
+			<article id="tronco">
+				<h:form id="formularioA">
+					<p:carousel numVisible="1" effect="easeInStrong"
+						headerText="Opções" style="margin-bottom:0" responsive="true">
+						<p:tab title="Opcao 1">
+							<h:panelGrid columns="3" style="width:100%" cellpadding="10" rendered="#{Resultado.pegou}">
+								<h:outputText value="Placa Mãe: " />
+								<h:outputText value="#{Resultado.comp.placaMae.nome}" />
+								<h:outputText value="#{Resultado.comp.placaMae.valor}" />
+
+								<h:outputText value="Processador: " />
+								<h:outputText value="#{Resultado.comp.cpu.nome}" />
+								<h:outputText value="#{Resultado.comp.cpu.preco}" />
+
+								<h:outputText value="Vídeo: " />
+								<h:outputText value="#{Resultado.comp.gpu.nome}" />
+								<h:outputText value="#{Resultado.comp.gpu.preco}" />
+
+								<h:outputText value="RAM: " />
+								<h:outputText value="#{Resultado.comp.ram.nome}" />
+								<h:outputText value="#{Resultado.comp.ram.preco}" />
+
+								<h:outputText value="Fonte: " />
+								<h:outputText value="#{Resultado.comp.fonte.nome}" />
+								<h:outputText value="#{Resultado.comp.fonte.valor}" />
+
+								<h:outputText value="" />
+								<h:outputText value="Total: " />
+								<h:outputText value="#{Resultado.comp.valorTotal}" />
+							</h:panelGrid>
+						</p:tab>
+<!-- 						<p:tab title="Opcao 2"> -->
+<!-- 							<h:panelGrid columns="3" style="width:100%" cellpadding="10"> -->
+<!-- 								<h:outputText value="Placa Mãe: " /> -->
+<!-- 								<h:outputText value="" /> -->
+<!-- 								<h:outputText value="" /> -->
+
+<!-- 								<h:outputText value="Processador: " /> -->
+<!-- 								<h:outputText value="" /> -->
+<!-- 								<h:outputText value="" /> -->
+
+<!-- 								<h:outputText value="Vídeo: " /> -->
+<!-- 								<h:outputText value="" /> -->
+<!-- 								<h:outputText value="" /> -->
+
+<!-- 								<h:outputText value="RAM: " /> -->
+<!-- 								<h:outputText value="" /> -->
+<!-- 								<h:outputText value="" /> -->
+
+<!-- 								<h:outputText value="Fonte: " /> -->
+<!-- 								<h:outputText value="" /> -->
+<!-- 								<h:outputText value="" /> -->
+
+<!-- 								<h:outputText value="" /> -->
+<!-- 								<h:outputText value="Total: " /> -->
+<!-- 								<h:outputText value="OHHHH PORRA" /> -->
+<!-- 							</h:panelGrid> -->
+<!-- 						</p:tab> -->
+<!-- 						<p:tab title="Opcao 3"> -->
+<!-- 							<h:panelGrid columns="3" style="width:100%" cellpadding="10"> -->
+<!-- 								<h:outputText value="Placa Mãe: " /> -->
+<!-- 								<h:outputText value="" /> -->
+<!-- 								<h:outputText value="" /> -->
+
+<!-- 								<h:outputText value="Processador: " /> -->
+<!-- 								<h:outputText value="" /> -->
+<!-- 								<h:outputText value="" /> -->
+
+<!-- 								<h:outputText value="Vídeo: " /> -->
+<!-- 								<h:outputText value="" /> -->
+<!-- 								<h:outputText value="" /> -->
+
+<!-- 								<h:outputText value="RAM: " /> -->
+<!-- 								<h:outputText value="" /> -->
+<!-- 								<h:outputText value="" /> -->
+
+<!-- 								<h:outputText value="Fonte: " /> -->
+<!-- 								<h:outputText value="" /> -->
+<!-- 								<h:outputText value="" /> -->
+
+<!-- 								<h:outputText value="" /> -->
+<!-- 								<h:outputText value="Total: " /> -->
+<!-- 								<h:outputText value="" /> -->
+<!-- 							</h:panelGrid> -->
+<!-- 						</p:tab> -->
+					</p:carousel>
+				</h:form>
+			</article>
+		</section>
+	</div>
+</ui:composition>

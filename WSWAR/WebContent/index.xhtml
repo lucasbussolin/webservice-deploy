@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta charset="utf8" />
+	<title>Super PC</title>
+	<link rel="stylesheet" href="_css/estilo.css" />
+</h:head>
+<h:body>
+	<div id="interface">
+		<header id="cabecalho">
+			<hgroup>
+				<h1>Super PC</h1>
+				<h2>Monte seu PC com seu suado money!</h2>
+			</hgroup>
+		</header>
+
+		<section id="corpo">
+			<article id="tronco">
+				<h:form id="formulario" styleClass="forms">
+					<fieldset>
+						<h2>Insira o valor e veja a mágica acontecer!</h2>
+						<br /> <br /> <br />
+						<h:inputText id="valor" styleClass="inputs"
+							value="#{PegaPreco.preco}" />
+						<br />
+						<h:commandButton action="#{PegaPreco.calculaPc()}"
+							styleClass="botoes" value="Montar" />
+					</fieldset>
+				</h:form>
+			</article>
+
+			<h:form rendered="#{PegaPreco.resultado}">
+				<ui:include src="/resultado.xhtml" />
+			</h:form>
+			>
+
+
+		</section>
+
+		<footer id="rodape">
+			<p>
+				Copyright 2017 - by Lucas Bussolin <br /> <a
+					href="http://kabum.com.br" target="_blank">Kabum</a> | <a
+					href="https://pt-br.facebook.com/lucasalves.bussolin"
+					target="_blank">Lucas</a>
+			</p>
+		</footer>
+
+	</div>
+</h:body>
+</html>

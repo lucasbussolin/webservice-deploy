@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Titillium+Web';
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+}
+
+div#interface {
+    min-width: 400px;
+    max-width: 1500px;
+    background-color: #ffffff;
+    margin: -10px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 100px;	
+}
+
+header#cabecalho h1 {
+    font-family: sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+section#corpo {
+    display: block;
+    min-width: 390px;
+    max-width: 1500px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+article#tronco h2 {
+	margin-top: 25px;
+	color: #ff0000;
+	display: block;
+	text-align: center;
+}
+
+article#tronco {
+	background-color: #babdb6;
+	height: 400px;
+}
+
+.forms {
+	margin: auto;
+}
+
+fieldset {
+	border-color: #cecece;
+	margin: auto;
+	min-width: 400px;
+	max-width: 1500px;
+	border-color: transparent;
+}
+
+.inputs {
+	vertical-align: middle;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	height: 20px;
+	width: 150px;
+	font-family: sans-serif;
+	font-size: 13pt;
+	margin: 5px auto;
+}
+
+.botoes {
+	margin: 0 auto;
+	display: block;
+	height: 25px;
+	width: 100px;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}

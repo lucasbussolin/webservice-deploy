@@ -1,0 +1,19 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<h:form>
+		Nome
+		<h:inputText value="#{CpuForm.nome}" /><br/>
+		
+		fabricante
+		<h:inputText value="#{CpuForm.fabricante}" /><br/>
+		
+		Socket
+		<h:inputText value="#{CpuForm.socket}" /><br/>
+		
+		<h:commandButton action="#{CpuForm.adicionaComponente()}" value="Salvar" />
+	</h:form>
+
+</ui:composition>
